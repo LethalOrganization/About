@@ -1,0 +1,12 @@
+.heroContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  height: 80vh;
+  width: 100%;
+}
+
+.title {
+  color: red;
+}
