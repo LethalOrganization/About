@@ -1,0 +1,6 @@
+.footer {
+  height: 25vh;
+  width: 100%;
+  color: var(--background);
+  background-color: var(--foreground);
+}
