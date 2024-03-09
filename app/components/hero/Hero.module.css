@@ -26,13 +26,13 @@
   grid-column: image;
   grid-row: row1;
   
+  position: relative;
   overflow: hidden;
 }
 
 .heroImage {
-  height: 100%;
   object-fit: cover;
-  object-position: top right;
+  object-position: 50% 50%;
 }
 
 .title {

@@ -14,7 +14,7 @@ export default function Hero({title, subtitle, backgroundImageUrl}: HeroProps) {
       <h2 className={styles.subtitle}>{subtitle}</h2>
     </div>
     <div className={styles.heroImageContainer}>
-      <img className={styles.heroImage} src={backgroundImageUrl} alt='Hero block image'/>
+      <Image className={styles.heroImage} fill={true} src={backgroundImageUrl} alt='Hero block image'/>
     </div>
   </div>
 }
