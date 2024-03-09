@@ -1,12 +1,46 @@
-.heroContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: white;
-  height: 80vh;
+.hero {
+  display: grid;
+  grid-template-columns: [content] 50vw [image] 50vw;  
+  grid-template-rows: [row1] 100vh;
+
+  background-color: var(--foreground);
+  height: 100vh;
   width: 100%;
 }
 
+.contentContainer {
+  grid-column: content;
+  grid-row: row1;
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: fit-content;
+  flex-grow: 1;
+  font-size: 8rem;
+  padding: 0px 3% 0px 4%;
+}
+
+.heroImageContainer {
+  grid-column: image;
+  grid-row: row1;
+  
+  position: relative;
+  overflow: hidden;
+}
+
+.heroImage {
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
 .title {
-  color: red;
+  font-size: 8rem;
+  color: white;
+}
+
+.subtitle {
+  font-size: 4rem;
+  color: var(--accent2);
 }
