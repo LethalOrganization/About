@@ -1,0 +1,33 @@
+.about {
+  display: grid;
+  grid-template-columns: [img] 30% [content] 70%;
+  grid-template-rows: [r1] auto;
+
+}
+
+.aboutImg {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 16px;
+  grid-column: img;
+  grid-row: r1;
+  min-height: 300px;
+}
+
+.aboutImg img {
+  object-fit: cover;
+  aspect-ratio: 1;
+  object-position: 50% 50%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  padding-left: 48px;
+  grid-column: content;
+  grid-row: r1;
+}
+
