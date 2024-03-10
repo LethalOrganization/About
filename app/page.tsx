@@ -7,8 +7,8 @@ import Services from "./components/services/Services";
 export default function Home() {
   return (
     <main className={styles.main}>
-      <Hero title="Lethal Org." subtitle="lorem ipsum." backgroundImageUrl="/images/ice.jpg" />
-      <About />
+      <Hero title="Lethal Org." subtitle="Consulting services" backgroundImageUrl="/images/lethal.gif" />
+      <About imageSrc="/images/nf.jpg"/>
       <Services/>
       <Footer/>
     </main>
