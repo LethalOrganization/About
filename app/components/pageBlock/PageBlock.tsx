@@ -1,4 +1,5 @@
-import { ReactNode } from "react";
+"use client";
+import { ReactNode, useEffect, useState } from "react";
 import styles from './PageBlock.module.css';
 
 export enum Orientation {
